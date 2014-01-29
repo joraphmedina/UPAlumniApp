@@ -1,0 +1,67 @@
+<FrameLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#680000"
+    tools:context=".FullscreenActivity" >
+
+    <!-- The primary full-screen view. This can be replaced with whatever view is needed to present your content, e.g. VideoView, SurfaceView, TextureView, etc. -->
+    <!--
+         This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows.
+    -->
+
+<RelativeLayout
+    android:id="@+id/mainframe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="UselessParent" >
+<!--      <FrameLayout
+       android:id="@+id/newsframe"
+       android:layout_width="match_parent"
+       android:layout_height="153dp"
+       android:fitsSystemWindows="true">
+-->
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="142dp"
+            android:text="News"
+            tools:ignore="HardcodedText" />
+        
+    <!-- </FrameLayout> -->
+    
+   
+   <!--    <Button
+            android:id="@+id/EventsButton"
+            style="?buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/events"
+            android:icon="@drawable/smalllogo"/>  -->
+
+		<ImageButton
+		    android:id="@+id/button2"
+		    android:layout_width="match_parent"
+		    android:layout_height="142dp"
+		    android:layout_below="@+id/button1"
+		    android:src="@drawable/smalllogo"/>
+         <Button
+             android:id="@+id/button3"
+             android:layout_width="match_parent"
+             android:layout_height="142dp"
+             android:layout_below="@+id/button2"
+             android:text="Photos and Videos"
+             tools:ignore="HardcodedText" />
+        <Button
+            android:id="@+id/button4"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_below="@+id/button3"
+             android:text="Alumni Login"
+             tools:ignore="HardcodedText"/>
+    
+</RelativeLayout>
+  
+
+</FrameLayout>
